@@ -184,7 +184,7 @@ export default {
   },
   methods: {
     /**
-     * functionality of remove all filters from none loaded screen
+     * functionality to remove all filters from none loaded screen
      * @param id : string html id of filter menu
      * @param item : id of item
      * @param all : boolean delete all filters?
@@ -193,12 +193,13 @@ export default {
       const possibleThemeElements = document.querySelectorAll('ul#' + id + ' li a');
       const filterID = 'filter-theme-';
 
+      // clear old selectedFilters
       while (this.selectedFilters.length > 0) {
         this.selectedFilters.pop();
       }
 
       let filters = [];
-      possibleThemeElements.forEach(function(element) {
+      possibleThemeElements.forEach((element) => {
         if (element.classList.toString().includes('active')) {
           if (!all) {
             if (element.id === filterID + item) {
@@ -246,10 +247,11 @@ export default {
         let descText = document.getElementById('descText-' + project);
 
         // check if theme is included
-        const rawProjectThemes = document.getElementById('filter-' + project).innerText.replaceAll('\n','').replaceAll(' ', '');
+        const rawProjectThemes = document.getElementById('filter-' + project).innerText
+                                    .replaceAll('\n','').replaceAll(' ', '');
         let projectThemes = rawProjectThemes.split(',');
 
-
+        // include all active themes in possibleThemeElements
         const possibleThemeElements = document.querySelectorAll('ul#theme-options li a');
         let possibleThemes = '';
         possibleThemeElements.forEach(function(element) {
@@ -257,9 +259,10 @@ export default {
             possibleThemes += element.innerHTML + '_';
           }
         });
+
+        // add all themes to a project that are overlapping with selected theme filter
         const themes = possibleThemes.split('_');
         let themesThatAreIncluded = 0;
-        // add themes a project has overlapping with selected theme filter
         for (let i = 0; i < themes.length; i++) {
           for (let j = 0; j < projectThemes.length; j++) {
             if (themes.at(i).includes(projectThemes.at(j))) {
@@ -294,6 +297,7 @@ export default {
         } else if (!(projectActuality.innerHTML.includes(actuality) || actuality === 'Alle Projekte')) {
           this.changeVisibility(project, false);
         } else {
+          // mark actuality green in project
           if (actuality !== 'Beteiligung' && actuality !== 'Alle Projekte') {
             projectActuality.classList.add('green')
           } else {
@@ -319,14 +323,15 @@ export default {
           name.innerHTML = retVal.at(0)
           overlap += retVal.at(1)
 
-          //if overlap is large enough show project
+          // add overlapping words from search in project description and title
           let check = 0;
           for (let i = 0; i < search.length; i++) {
             if (search[i] !== '') {
               check++;
             }
           }
-          // If sufficient words from search are included in project description and title show project
+
+          // if overlap is large enough show project
           if (overlap >= (check * 0.9)) {
             this.changeVisibility(project, true);
             projectsLoaded++;
@@ -354,13 +359,14 @@ export default {
           .catch(err => console.log(err));
     },
     /**
-     * change chosen element of actuality filter
+     * change actuality filter of chosen element
      * @param ident : string id of html element
      */
     filterRelevance(ident) {
       const children = document.querySelectorAll('ul#active-options li a');
       const activeProjects = document.getElementById('filter-active')
 
+      // change text of actuality filter
       if (ident === 'abgeschlossene') {
         activeProjects.innerHTML = 'Beendet';
       } else if (ident === 'aktuelle') {
@@ -374,8 +380,12 @@ export default {
       if (clickedElement.classList.contains('active') && clickedElement.id !== 'alle-projekte') {
         wasActive = true;
       }
+      // remove old actuality
       this.actuality.pop()
+
       children.forEach((element) => element.classList.remove('active'));
+
+      // add new actuality
       if (wasActive) {
         document.getElementById('alle-projekte').classList.add('active');
         this.actuality.push('Beteiligung')
@@ -386,7 +396,7 @@ export default {
       }
     },
     /**
-     * change chosen element of theme filter
+     * change theme filter of chosen element
      * @param ident : string id of html element
      */
     filterTheme(ident) {
@@ -394,6 +404,7 @@ export default {
         ident = 'alle-themen';
       }
 
+      // remove all active classes if alle-themen is selected
       const children = document.querySelectorAll('ul#theme-options li a');
       if (ident === 'alle-themen') {
         children.forEach((element) => element.classList.remove('active'))
@@ -401,10 +412,12 @@ export default {
         document.getElementById('alle-themen').classList.remove('active')
       }
 
+      // remove selected filters
       while (this.selectedFilters.length > 0) {
         this.selectedFilters.pop();
       }
 
+      // set active or inactive dependant on state
       const element = document.getElementById(ident);
       if (element.classList.contains('active')) {
         element.classList.remove('active');
@@ -412,6 +425,7 @@ export default {
         element.classList.add('active');
       }
 
+      // add selected filters
       let hasActiveElement = false;
       for (let i = 0; i < children.length; i++) {
         if (children.item(i).classList.contains('active')) {

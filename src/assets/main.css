@@ -1,7 +1,7 @@
 @import "base.css";
 @import "bootstrap";
 
-/* Colors */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ Colors ~~~~~~~~~~~~~~~~~~~~~~~~ */
 nav, .download:hover, .vue-dropdown-menu li a:hover, .vue-dropdown-menu-settings li a:hover, .project-hover:hover {
   background-color: #D3D3D3;
 }
@@ -34,7 +34,7 @@ body {
   background-color: rgba(0,0,0,0.7); /* gray out everything besides the settings menu */
 }
 
-/* Button designs */
+/* ~~~~~~~~~~~ Button designs (Colors) ~~~~~~~~~~~ */
 .btn-outline-dropdown {
   background-color: #FFFFFF;
   --bs-btn-border-color: #808080;
@@ -71,7 +71,7 @@ a, .accept:hover, .cancel {
   border-top: #F1F1F1 1px solid;
 }
 
-/* fonts */
+/* ~~~~~~~~~~~~~~~~~~~~~~ fonts ~~~~~~~~~~~~~~~~~~~~~~ */
 @font-face {
   font-family: Open Dyslexic;
   src: url("fonts/OpenDyslexic-Regular.otf") format("opentype");
@@ -89,7 +89,7 @@ a, .accept:hover, .cancel {
   src: url("fonts/HelveticaNeue-Light.otf") format("opentype");
 }
 
-/* Settings of leichte Sprache toggle */
+/* ~~~~~~~~~~~~~~~~~~~~~~ Settings of "Leichte Sprache" toggle ~~~~~~~~~~~~~~~~~~~~~~ */
 .toggle, a {
   cursor: pointer;
 }
@@ -97,6 +97,8 @@ a, .accept:hover, .cancel {
   position: absolute;
   visibility: hidden;
 }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ other settings for all views ~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* standard fond and size settings */
 body { font-family: Arial, serif; }
@@ -132,8 +134,20 @@ h1 {
   width: fit-content;
 }
 
+.fixed-top {
+  z-index: 4;
+  height: 56px;
+}
 
-/* Nav bars */
+.pages {
+  font-size: 10px;
+}
+
+.link-hover {
+  text-decoration: underline;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ Nav bars ~~~~~~~~~~~~~~~~~~~~~~ */
 nav {
   position: fixed;
   display: inline-block;
@@ -209,7 +223,26 @@ img {
   width: 85%;
 }
 
-/* Desktop Interface */
+/* ~~~~~~~~~~~~~~~~~~~~~~ The Settings menu ~~~~~~~~~~~~~~~~~~~~~~ */
+.settings {
+  position: fixed;
+  z-index: 10; /* Sits over entire body */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-content {
+  width: 60vw;
+  min-width: 300px;
+}
+
+.accept, .cancel {
+  font-weight: bold;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~ Desktop Interface ~~~~~~~~~~~~~~~~~~~~~~ */
 @media only screen and (orientation: landscape) {
   .title {
     margin-top: .5vh;
@@ -221,7 +254,7 @@ img {
     width: fit-content;
   }
   
-  /* Settings Grid Layout */
+  /* ~~~~~~~~~~~ Settings Grid Layout ~~~~~~~~~~~ */
   .nav .col-5, #settings-menu .col-5, #project-nav .col-5 {
     width: 50%;
     margin-bottom: 0.5rem;
@@ -265,14 +298,6 @@ img {
     width: 36vw;
   }
 
-  /* change between desktop and mobile layout */
-  .desktop-filter {
-    display: inline;
-  }
-  .mobil-filter {
-    display: none;
-  }
-
   .download {
     width: 50%;
   }
@@ -282,20 +307,7 @@ img {
   }
 }
 
-.fixed-top {
-  z-index: 4;
-  height: 56px;
-}
-
-.pages {
-  font-size: 10px;
-}
-
-.link-hover {
-  text-decoration: underline;
-}
-
-/* Mobile Interface */
+/* ~~~~~~~~~~~~~~~~~~~~~~ Mobile Interface (Smartphone and Tablet) ~~~~~~~~~~~~~~~~~~~~~~ */
 @media only screen and (orientation: portrait) {
   button {
     min-width: 10vw;
@@ -311,7 +323,7 @@ img {
     width: fit-content;
   }
 
-  /* Settings Grid Layout */
+  /* ~~~~~~~~~~~ Settings Grid Layout ~~~~~~~~~~~ */
   .nav .col-5, #settings-menu .col-5 {
     width: 100%;
   }
@@ -365,14 +377,6 @@ img {
     width: 35vw;
   }
 
-  /* change between desktop and mobile layout */
-  .desktop-filter {
-    display: none;
-  }
-  .mobil-filter {
-    display: inline;
-  }
-
   .in-project-width {
     width: 100%;
   }
@@ -381,7 +385,8 @@ img {
     height: 5vh;
     width: 6vw;
   }
-  
+
+  /* ~~~~~~~~~~~ Smartphone layout ~~~~~~~~~~~ */
   @media screen and (width < 550px) {
     .title {
       margin-bottom: 0;
@@ -407,23 +412,4 @@ img {
       font-size: 10px;
     }
   }
-}
-
-/* The Settings menu */
-.settings {
-  position: fixed;
-  z-index: 10; /* Sits over entire body */
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-}
-
-.modal-content {
-  width: 60vw;
-  min-width: 300px;
-}
-
-.accept, .cancel {
-  font-weight: bold;
 }

@@ -86,6 +86,9 @@ export default {
     this.applyFontSize(false)
   },
   methods: {
+    /**
+     * Save settings when opening settings for cancel button
+     */
     setStartFontSettings() {
       document.querySelectorAll('ul#font-options li a').forEach((element) => {
         if (element.classList.contains('active')) {
@@ -99,6 +102,10 @@ export default {
       })
       this.oldFontSize = this.fontSize;
     },
+    /**
+     * Change visibility
+     * @param show : boolean
+     */
     showModal (show) {
       const modal = document.getElementById('settings-menu');
       if (show) {
@@ -111,7 +118,7 @@ export default {
     },
     /**
      * change chosen font size
-     * ident: var id of Size Option
+     * @param ident : string id of Size Option
      */
     filterSize(ident) {
       const size = document.getElementById('filter-size');
@@ -127,6 +134,7 @@ export default {
     /**
      * change chosen font
      * ident: var id of Font Option
+     * @param ident : string id of font family
      */
     filterFont(ident) {
       const fonts = document.getElementById('filter-font');

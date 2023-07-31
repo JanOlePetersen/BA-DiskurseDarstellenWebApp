@@ -175,20 +175,24 @@ export default {
   },
   methods: {
     /**
-     * remove span and a for marking searched text
+     * remove <span> and <a> for marking searched text
      * @param item : var of element that is searched
      * @param search : string searched words and letters
      */
     getText (item, search) {
       if (item.length > 0) {
         for (let i = 0; i < item.length; i++) {
+          // if there is link to external site remove link before search and add on later
           if (item[i].innerHTML.includes('<a href="')) {
             item.item(i).innerHTML = markText(item[i].innerHTML
                 // remove link from search
-                .replace('<a href="' + this.adresse + '" target="_blank" class="text-decoration-underline link-hover">', '').replace('</a>', ''), search).split('_').at(0)
-                // add link back !important link must be around "hier" and no other "hier" may be in the same segment
+                .replace('<a href="' + this.adresse + '" target="_blank" class="text-decoration-underline link-hover">', '')
+                .replace('</a>', ''), search).split('_').at(0)
+                // add link back on searched text. "hier"-link must be surrounded by <a> and only one "hier" may be in the same segment
                 .replace('hier', '<a href="' + this.adresse + '" target="_blank" class="text-decoration-underline link-hover">hier</a>');
-          } else {
+          }
+          // if there is no link
+          else {
             item.item(i).innerHTML = markText(item[i].innerHTML, search).split('_').at(0);
           }
         }
