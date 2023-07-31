@@ -41,9 +41,11 @@ npm fund
 npm install
 ```
 
-replace src folder
-add data, dis and files folder to project
+delete public and src folder
 
+replace index.html
+
+copy src, data, dist and files folder to project
 
 ## Start Project locally
 ```
