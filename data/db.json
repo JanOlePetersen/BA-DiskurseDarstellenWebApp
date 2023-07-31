@@ -1,0 +1,689 @@
+{
+  "filters": [
+    {
+      "id": 0,
+      "name": "Arbeit/Wirtschaft"
+    },
+    {
+      "id": 1,
+      "name": "Bauen/Wohnen"
+    },
+    {
+      "id": 2,
+      "name": "Bildung/Kultur"
+    },
+    {
+      "id": 3,
+      "name": "Familie/Finanzen"
+    },
+    {
+      "id": 4,
+      "name": "Forschung"
+    },
+    {
+      "id": 5,
+      "name": "Gesundheit"
+    },
+    {
+      "id": 6,
+      "name": "Stadtentwicklung"
+    },
+    {
+      "id": 7,
+      "name": "Umwelt/Verkehr"
+    }
+  ],
+  "projects": [
+    {
+      "id": 0,
+      "projectName": "Museumsbau",
+      "projectDescription": "Es soll ein Museum zur Geschichte der Burg gebaut werden. Hierfür müssen die rechtlichen Grundlagen festgesetzt werden.",
+      "projectSearchImage": "museum.jpg",
+      "projectSearchImageAltText": "Kunstmuseum",
+      "active": "Mögliche Beteiligung",
+      "endDate": "31.10.2023",
+      "themes": [
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "information": [
+        {
+          "name": "Allgemeine Informationen über das Projekt",
+          "contentLeft": [
+            {
+              "normal": "Umsetzungszeitraum: 01.01.2024 - 31.10.2024 <br> Kosten: ~3 Mil.",
+              "simple": "Umsetzungszeitraum: 01.01.2024 - 31.10.2024 <br> Kosten: ~3 Millionen"
+            },
+            {
+              "normal": "Für das Museum soll ein neues Gebäude errichtet werden. Die Grundfläche für dieses ist ~500m².",
+              "simple": "Für das Museum soll ein neues Gebäude errichtet werden. Die Grundfläche für das Museum ist ungefähr 500m² groß."
+            }
+          ],
+          "contentRight": [
+            {
+              "src": "burg.jpg",
+              "alt": "Verfallene Burg",
+              "normal": "Bild: Bisheriger Fortschritt",
+              "simple": "Bild: Bisheriger Fortschritt"
+            },
+            {
+              "src": "BurgKarte.png",
+              "alt": "Karte des Gebietes",
+              "normal": "Bild: Karte des Planungsgebietes",
+              "simple": "Bild: Karte des Planungsgebietes"
+            }
+          ],
+          "files": [
+            {
+              "name": "Ausführlicher Bebauungsplan",
+              "location": "bebauungsplan"
+            }
+          ]
+        },
+        {
+          "name": "Informationen zur Bürgerbeteiligung",
+          "contentLeft": [
+            {
+              "normal": "Beteiligung vom: 01.08.23 <br> Beteiligung bis: 30.09.23 <br> Beteiligungsort: Bauministerium",
+              "simple": "Beteiligung vom: 01.08.23 <br> Beteiligung bis: 30.09.23 <br> Beteiligungsort: Bauministerium"
+            },
+            {
+              "normal": "Die Beteiligung leider nur vor Ort für Anwohner möglich.",
+              "simple": "Die Beteiligung leider nur vor Ort für Anwohner möglich."
+            }
+          ],
+          "contentRight": [
+            {
+              "src": "museum.jpg",
+              "alt": "Museum",
+              "normal": "Bild: Geplanter Innenraum",
+              "simple": "Bild: Geplanter Innenraum"
+            }
+          ],
+          "files": [
+            {
+              "name": "Anreise zur Beteiligung: Karte",
+              "location": "beteiligungKarte"
+            }
+          ]
+        }
+      ],
+      "relatedProjects":
+      {
+        "name": "Zusammenhängende Projekte",
+        "projects": [
+          {
+            "id": 1
+          },{
+            "id": 2
+          }
+        ]
+      }
+    },{
+      "id": 1,
+      "projectName": "Parkanlage der Burg",
+      "projectDescription": "Um die Burg und das kommende Museum soll ein Park angelegt werden. In der Beteiligung können Sie z.B. die Größe eines Spielplatzes und bei der Platzierung der verschiedenen Anlagen mithelfen.",
+      "projectSearchImage": "burg.jpg",
+      "projectSearchImageAltText": "Alte Burg mit Park",
+      "active": "Beendete Beteiligung",
+      "endDate": "30.06.2023",
+      "themes": [
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "information": [
+        {
+          "name": "Allgemeine Informationen über das Projekt",
+          "contentLeft": [
+            {
+              "normal": "Umsetzungszeitraum: 01.08.2023 - 30.09.2023 <br> Kosten: ~1 Mil.",
+              "simple": "Umsetzungszeitraum: 01.08.2023 - 30.09.2023 <br> Kosten: ~1 Millionen"
+            },
+            {
+              "normal": "Um das geplante Museum und die Burg soll ein Park errichtet werden. Hierfür sollen Bäume, Sträucher und Blumen gepflanzt, so wie Bäche und Teiche angelegt werden.",
+              "simple": "Um das geplante Museum und die Burg soll ein Park errichtet werden. Hierfür sollen Bäume, Sträucher und Blumen gepflanzt werden. Es sollen auch Bäche und Teiche angelegt werden."
+            }
+          ],
+          "contentRight": [
+            {
+              "src": "burg.jpg",
+              "alt": "Verfallene Burg mit Park",
+              "normal": "Bild: Bisheriger Fortschritt",
+              "simple": "Bild: Bisheriger Fortschritt"
+            },
+            {
+              "src": "BurgKarte.png",
+              "alt": "Karte der Burg",
+              "normal": "Bild: Karte des Geländes",
+              "simple": "Bild: Karte des Gebiets"
+            }
+          ],
+          "files": [
+            {
+              "name": "Aktualisierter Bebauungsplan",
+              "location": "Bebauungsplan"
+            }
+          ]
+        },
+        {
+          "name": "Informationen zur Bürgerbeteiligung",
+          "contentLeft": [
+            {
+              "normal": "Beteiligung fand bis zum vom: 15.06.23 statt.",
+              "simple": "Beteiligung fand bis zum vom: 15.06.23 statt."
+            },
+            {
+              "normal": "Die Beteiligung ergab, dass zu wenig Mülleimer eingeplant waren. Dies wird in dem aktualisierten Plan berücksichtigt.",
+              "simple": "Die Beteiligung ergab, dass zu wenig Mülleimer eingeplant waren. Dies wird in dem aktualisierten Plan berücksichtigt."
+            }
+          ],
+          "contentRight": [
+          ],
+          "files": [
+            {
+              "name": "Ergebnisse der Beteiligung",
+              "location": "ergebnisse"
+            }
+          ]
+        }
+      ],
+      "relatedProjects":
+      {
+        "name": "Zusammenhängende Projekte",
+        "projects": [
+          {
+            "id": 0
+          },{
+            "id": 2
+          }
+        ]
+      }
+    }, {
+      "id": 2,
+      "projectName": "Renovierung der Burg",
+      "projectDescription": "Renovierung und Wiederaufbau der Burg.",
+      "projectSearchImage": "burg.jpg",
+      "projectSearchImageAltText": "Alte Burg mit Park",
+      "active": "Mögliche Beteiligung",
+      "endDate": "30.09.2023",
+      "themes": [
+        {
+          "id": 2
+        },
+        {
+          "id": 3
+        },
+        {
+          "id": 4
+        }
+      ],
+      "information": [
+        {
+          "name": "Allgemeine Informationen über das Projekt",
+          "contentLeft": [
+            {
+              "normal": "Umsetzungszeitraum: 06.10.2023 - 05.04.2024 <br> Kosten: ~5 Mil.",
+              "simple": "Umsetzungszeitraum: 06.10.2023 - 05.04.2024 <br> Kosten: ~5 Millionen"
+            },
+            {
+              "normal": "Die Burg soll renoviert werden. Hierfür werden Restaurierer engagiert, die die verfallenen oder kaputten Teile der Burg wieder herstellen sollen.",
+              "simple": "Die Burg soll renoviert werden. Hierfür werden Personen zu wiederaufbau beschäftigt."
+            }
+          ],
+          "contentRight": [
+            {
+              "src": "burg.jpg",
+              "alt": "Verfallene Burg mit Park",
+              "normal": "Bild: Bisheriger Fortschritt",
+              "simple": "Bild: Bisheriger Fortschritt"
+            },
+            {
+              "src": "BurgKarte.png",
+              "alt": "Karte der Burg",
+              "normal": "Bild: Karte des Gebiets",
+              "simple": "Bild: Karte des Gebiets"
+            }
+          ],
+          "files": [
+            {
+              "name": "Ausführlicher Bebauungsplan",
+              "location": "bebauungsplan"
+            }
+          ]
+        },
+        {
+          "name": "Informationen zur Bürgerbeteiligung",
+          "contentLeft": [
+            {
+              "normal": "Beteiligung vom: 15.06.23 <br> Beteiligung bis: 30.07.23 <br> Beteiligungsort: Bauministerium, Webseite",
+              "simple": "Beteiligung vom: 15.06.23 <br> Beteiligung bis: 30.07.23 <br> Beteiligungsort: Bauministerium, Webseite"
+            },
+            {
+              "normal": "Die Beteiligung ist nur möglich, wenn Sie im der Stadt Lübeck, Hamburg oder Kiel wohnen. <br> Auf der Webseite können Sie sich bei dieser ADRESSE beteiligen. <br> Alternativ können Sie auch zu uns kommen.",
+              "simple": "Die Beteiligung ist nur möglich, wenn Sie im der Stadt Lübeck, Hamburg oder Kiel wohnen. <br> Auf der Webseite können Sie sich bei dieser ADRESSE beteiligen. <br> Alternativ können Sie auch zu uns kommen."
+            }
+          ],
+          "contentRight": [
+
+          ],
+          "files": [
+            {
+              "name": "Anreise zur Beteiligung: Karte",
+              "location": "beteiligungKarte"
+            }
+          ]
+        }
+      ],
+      "relatedProjects":
+      {
+        "name": "Zusammenhängende Projekte",
+        "projects": [
+          {
+            "id": 0
+          },{
+            "id": 1
+          }
+        ]
+      }
+    },
+
+
+
+
+
+
+
+
+    {
+      "id": 3,
+      "projectName": "Wohnquartier Brauerei Wormser Straße",
+      "projectDescription": "Das Gebiet einer ehemaligen Brauerei in der Wormser Straße im Stadtteil Mainz-Weisenau hat eine schöne Lage. Dieses besondere Gebiet soll nun als attraktiver Wohnstandort direkt an der Rheinfront entwickelt werden.",
+      "projectSearchImage": "Mainz/BebauungsplanTitle.jpg",
+      "projectSearchImageAltText": "Ehemalige Brauerei Wormser Straße Bebauungsplan© Landeshauptstadt Mainz - Stadtplanungsamt",
+      "active": "Beendete Beteiligung",
+      "endDate": "",
+      "onlineAddress": "https://www.mainz.de/verwaltung-und-politik/buergerservice-online/wohnquartier-brauerei-wormser-strasse.php",
+      "themes": [
+        {
+          "id": 1
+        }
+      ],
+      "information": [
+        {
+          "name": "Allgemeine Informationen über das Projekt",
+          "contentLeft": [
+            {
+              "normal": "Der Rahmenplan zur \"Ehemaligen Brauerei Wormser Straße\" umfasst eine sinnvolle städtebauliche Grundordnung für das Areal der ehemaligen Brauerei. Der Planungsprozess wurde 2015 gestartet. Anschließend wurden die Gebiete welche bebaut, als auch welche nicht bebaut werden sollen, erarbeitet. Auf dieser Grundkonzeption baut das Bebauungsplanverfahren auf. Da die Voraussetzungen des § 13a BauGB vorlagen, wurde das Bebauungsplanverfahren im beschleunigten Verfahren durchgeführt.",
+              "simple": "Der Rahmenplan zur \"Ehemaligen Brauerei Wormser Straße\" umfasst eine sinnvolle städtebauliche Grundordnung für das Gebiet der ehemaligen Brauerei. Der Planungsprozess wurde 2015 gestartet. Anschließend wurden die Gebiete welche bebaut oder nicht bebaut werden sollen, erarbeitet. Auf dieser Grundkonzeption baut das Verfahren der Bebauungsplanung auf. Da die Voraussetzungen des § 13a BauGB vorlagen, wurde das Bebauungsplanverfahren im beschleunigten Verfahren durchgeführt."
+            },
+            {
+              "normal": "Der Bebauungsplan soll neue Wohnungen und Arbeitsräume schaffen. Die Standorte der Tiefgaragen sind darüber hinaus räumlich günstig im Plangebiet verteilt. Und an der Dr.-Kirchoff-Straße soll eine alleeartige Bepflanzung stattfinden.",
+              "simple": "Der Bebauungsplan soll neue Wohnungen und Arbeitsräume schaffen. Die Standorte der Tiefgaragen sind darüber hinaus räumlich günstig im Plangebiet verteilt. Und an der Dr.-Kirchoff-Straße soll eine alleeartige Bepflanzung stattfinden."
+            }
+          ],
+          "contentRight": [
+            {
+              "src": "Mainz/Bebauungsplan.jpg",
+              "alt": "Ehemalige Brauerei Wormser Straße Bebauungsplan© Landeshauptstadt Mainz - Stadtplanungsamt",
+              "normal": "Ehem. Brauerei Wormser Straße Bebauungsplan© Landeshauptstadt Mainz - Stadtplanungsamt",
+              "simple": "Ehemalige Brauerei Wormser Straße Bebauungsplan© Landeshauptstadt Mainz - Stadtplanungsamt"
+            }
+          ],
+          "files": [
+            {
+              "name": "Ausführlicher Rahmenplan Brauerei Wormser Strasse",
+              "location": "Mainz/Brauerei_Wormser_Strasse_Rahmenplan.pdf"
+            },
+            {
+              "name": "Bebauungsplan Brauerei Wormser Strasse",
+              "location": "Mainz/W105_Bebauungsplan.pdf"
+            },
+            {
+              "name": "Textliche Fortsetzung",
+              "location": "Mainz/W105_Textliche_Festsetzungen.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Informationen zur Bürgerbeteiligung",
+          "contentLeft": [
+            {
+              "normal": "Status der Beteiligung: Beendet",
+              "simple": "Status der Beteiligung: Beendet"
+            }
+          ],
+          "contentRight": [
+          ],
+          "files": [
+          ]
+        }
+      ],
+      "relatedProjects":
+      {}
+    },
+    {
+      "id": 4,
+      "projectName": "Bebauungsplan 12-63a (Trettachzeile)",
+      "projectDescription": "In diesem Projekt soll die bauliche Entwicklung des Grundstückes des alten Wasserwekt Tegel durch Festsetzung eines allgemeinen Wohngebietes vorangetrieben werden. Neben einer Wohn- und Mischbebauung werden öffentliche und private Grünflächen, ein öffentlicher Kinderspielplatz sowie eine Waldfläche planungsrechtlich geplant.",
+      "projectSearchImage": "Berlin/uebersichtsplan_quer.png",
+      "projectSearchImageAltText": "Übersichtsplan für den Geltungsbereich 12-63a",
+      "active": "Mögliche Beteiligung",
+      "endDate": "18.08.2023",
+      "onlineAddress": "https://www.berlin.de/ba-reinickendorf/politik-und-verwaltung/aemter/stadtentwicklungsamt/stadtplanung-und-denkmalschutz/bebauungsplaene/bebauungsplan.1337448.php",
+      "themes": [
+        {
+          "id": 6
+        }
+      ],
+      "information": [
+        {
+          "name": "Allgemeine Informationen über das Projekt",
+          "contentLeft": [
+            {
+              "normal": "Der Bebauungsplan 12-63a soll die Voraussetzungen für eine bauliche Entwicklung des Grundstücks durch festsetzen eines allgemeinen Wohngebietes schaffen. Das Grundstück ist das alte Wasserwerke Tegel, Trettachzeile 15 in Berlin-Borsigwalde.<br>Die umliegenden Grundstücke sollen ebenfalls mitentwickelt werden. Ausgenommen sind Trettachzeile 9/11 und 17/19.<br>Neben einer Wohn- und Mischbebauung werden öffentliche und private Grünflächen, ein öffentlicher Kinderspielplatz sowie eine Waldfläche planungsrechtlich gesichert.",
+              "simple": "Der Bebauungsplan 12-63a soll die Voraussetzungen für eine bauliche Entwicklung des Grundstücks durch festsetzen eines allgemeinen Wohngebietes schaffen. Das Grundstück ist das alte Wasserwerke Tegel, Trettachzeile 15 in Berlin-Borsigwalde.<br>Die umliegenden Grundstücke sollen ebenfalls mitentwickelt werden. Ausgenommen sind Trettachzeile 9/11 und 17/19.<br>Neben einer Wohn- und Mischbebauung werden öffentliche und private Grünflächen, ein öffentlicher Kinderspielplatz sowie eine Waldfläche mitgeplant."
+            }
+          ],
+          "contentRight": [
+            {
+              "src": "Berlin/Bebauungsplan-noLegend.png",
+              "alt": "Bebauungsplan 12-63a ohne Legende",
+              "normal": "Bild: Bebauungsplan 12-63a ohne Legende",
+              "simple": "Bild: Bebauungsplan 12-63a ohne Legende"
+            }
+          ],
+          "files": [
+            {
+              "name": "Ausführlicher Bebauungsplan 12-63a (Trettachzeile)",
+              "location": "Berlin/bebauungsplan.png"
+            },
+            {
+              "name": "Textliche Fortsetzung",
+              "location": "Berlin/textliche_fortsetzung.pdf"
+            },
+            {
+              "name": "Grundstücksverzeichnis",
+              "location": "Berlin/grundstuecksverzeichnis_12-63a_pdf.pdf"
+            },
+            {
+              "name": "Begründung",
+              "location": "Berlin/begruendung.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Informationen zur Bürgerbeteiligung",
+          "contentLeft": [
+            {
+              "normal": "Status der Beteiligung: Möglich<br>Beteiligung seit: 10.07.2023 <br><b>Beteiligung bis:</b> 18.08.2023<br>Art der Beteiligung: Beteiligung der Öffentlichkeit gemäß § 3 Abs. 2 BauGB (öffentliche Auslegung)<br>",
+              "simple": "Status der Beteiligung: Möglich<br>Beteiligung seit: 10.07.2023 <br><b>Beteiligung bis:</b> 18.08.2023<br>Art der Beteiligung: Beteiligung der Öffentlichkeit gemäß § 3 Abs. 2 BauGB (öffentliche Auslegung)<br>"
+            },
+            {
+              "normal": "Die Beteiligung ist nur im <b>Bezirksamt Reinickendorf</b> von Berlin möglich.<br>Bezirksamt Reinickendorf von Berlin,<br>Stadtentwicklungsamt,<br>Fachbereich Stadtplanung und Denkmalschutz,<br>Eichborndamm 215, 13437 Berlin,<br>2. Etage, Raum 217C.",
+              "simple": "Die Beteiligung ist nur im <b>Bezirksamt Reinickendorf</b> von Berlin möglich.<br>Bezirksamt Reinickendorf von Berlin,<br>Stadtentwicklungsamt,<br>Fachbereich Stadtplanung und Denkmalschutz,<br>Eichborndamm 215, 13437 Berlin,<br>2. Etage, Raum 217C."
+            },
+            {
+              "normal": "Die Beteiligung ist nur während der <b>Öffnungszeiten</b> oder mit vereinbartem Termin möglich.<br>Uhrzeiten:<br>Montag bis Mittwoch: 08:30 bis 17 Uhr<br>Donnerstag: 09 bis 18 Uhr<br>Freitag: 09 bis 14 Uhr",
+              "simple": "Die Beteiligung ist nur während der <b>Öffnungszeiten</b> oder mit vereinbartem Termin möglich.<br>Uhrzeiten:<br>Montag bis Mittwoch: 08:30 bis 17 Uhr<br>Donnerstag: 09 bis 18 Uhr<br>Freitag: 09 bis 14 Uhr"
+            },
+            {
+              "normal": "<b>Kontakt:</b><br> Tel.: (030) 90294 3030<br>E-Mail: dirk.koechling@reinickendorf.berlin.de<br>Raum 212 oder Raum 214, Eichborndamm 215, 13437 Berlin",
+              "simple": "<b>Kontakt:</b><br> Telefonnummer: (030) 90294 3030<br>E-Mail Adresse: dirk.koechling@reinickendorf.berlin.de<br>Raum 212 oder Raum 214, Eichborndamm 215, 13437 Berlin"
+            },
+            {
+              "normal": "Es Fand bereits eine frühzeitige Bürgerbeteiligung 2018 statt. Die Ergebnisse befinden sich in der Begründung.",
+              "simple": "Es Fand bereits eine frühzeitige Bürgerbeteiligung 2018 statt. Die Ergebnisse befinden sich in der Begründung."
+            }
+          ],
+          "contentRight": [
+          ],
+          "files": [
+            {
+              "name": "Begründung",
+              "location": "Berlin/begruendung.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Umweltbezogene Gutachten",
+          "contentLeft": [
+          ],
+          "contentRight": [
+          ],
+          "files": [
+            {
+              "name": "Fachgutachten Artenschutz",
+              "location": "Berlin/fachgutachten_artenschutz.pdf"
+            },
+            {
+              "name": "Fachgutachten Biotypen",
+              "location": "Berlin/fachgutachten_biotypen.pdf"
+            },
+            {
+              "name": "Fachgutachten Boden und Grundwasser",
+              "location": "Berlin/fachgutachten_boden_und_grundwasser.pdf"
+            },
+            {
+              "name": "Fachgutachten Niederschlagswasser",
+              "location": "Berlin/fachgutachten_niederschlagswasser.pdf"
+            },
+            {
+              "name": "Fachgutachten Lärmemission",
+              "location": "Berlin/fachgutachten_lermemission.pdf"
+            },
+            {
+              "name": "Fachgutachten Verkehr",
+              "location": "Berlin/fachgutachten_verkehr.pdf"
+            },
+            {
+              "name": "Fachgutachten Wald",
+              "location": "Berlin/fachgutachten_wald.pdf"
+            },
+            {
+              "name": "Altlasten Träger öffentlicher Belange 2022",
+              "location": "Berlin/altlasten_etoeb.png"
+            },
+            {
+              "name": "Baumschutz Träger öffentlicher Belange 2022",
+              "location": "Berlin/baumschutz_etoeb.pdf"
+            },
+            {
+              "name": "Denkmalschutz Träger öffentlicher Belange 2022",
+              "location": "Berlin/denkmalschutz_etoeb.pdf"
+            },
+            {
+              "name": "Wald Träger öffentlicher Belange 2022",
+              "location": "Berlin/wald_etoeb.pdf"
+            }
+          ]
+        }
+      ],
+      "relatedProjects":
+      {}
+    },
+
+    {
+      "id": 5,
+      "projectName": "Bebauungsplan B-Bu 07 \"Gewerbeflächen südlich der Lobedaer Straße\"",
+      "projectDescription": "Mit dem Bebauungsplanverfahren sollen Flächen südlich der Lobedaer Straße für gewerbliche Nutzungen gesichert und entwickelt werden. Parallel zur Aufstellung des Bebauungsplanes wird für den Geltungsbereich eine Teiländerung des Flächennutzungsplanes eingeleitet.",
+      "projectSearchImage": "Jena/Bereich.png",
+      "projectSearchImageAltText": "Bereich in dem die Änderungen geplant werden.",
+      "active": "Mögliche Beteiligung",
+      "endDate": "",
+      "onlineAddress": "https://vorhaben.jena.de/de/hinweise_vorhaben/699315?_id=897618",
+      "themes": [
+        {
+          "id": 0
+        },
+        {
+          "id": 6
+        }
+      ],
+      "information": [
+        {
+          "name": "Allgemeine Informationen über das Projekt",
+          "contentLeft": [
+            {
+              "normal": "Bisherige Kosten: 75.000€",
+              "simple": "Bisherige Kosten: 75.000€"
+            },
+            {
+              "normal": "Geplant ist die Entwicklung und Sicherung von Flächen südlich der Lobedaer Straße für gewerbliche Nutzungen. Hierfür muss dieses Gebiet als eingeschränktes Gewerbegebiet festgesetzt werden.",
+              "simple": "Geplant ist die Entwicklung und Sicherung von Flächen südlich der Lobedaer Straße für gewerbliche Nutzungen. Hierfür muss dieses Gebiet als eingeschränktes Gewerbegebiet festgesetzt werden."
+            }
+          ],
+          "contentRight": [
+            {
+              "src": "Jena/Bereich.png",
+              "alt": "Bereich der Planung",
+              "normal": "Bild: Planungsbereich",
+              "simple": "Bild: Planungsbereich"
+            }
+          ],
+          "files": [
+            {
+              "name": "Beschluss Bebauungsplan B-Bu 07",
+              "location": "Jena/Beschlussvorlage_Stadtrat.png"
+            },
+            {
+              "name": "Veränderungssperre",
+              "location": "Jena/Beschlussvorlage_Stadtrat_Veraenderungssperre.png"
+            }
+          ]
+        },
+        {
+          "name": "Informationen zur Bürgerbeteiligung",
+          "contentLeft": [
+            {
+              "normal": "Status der Beteiligung: Möglich<br>Beteiligung seit: 11.07.2023<br>Art der Beteiligung: Beteiligung der Öffentlichkeit gemäß § 3 Abs. 2 BauGB (öffentliche Auslegung)<br>",
+              "simple": "Status der Beteiligung: Möglich<br>Beteiligung seit: 11.07.2023<br>Art der Beteiligung: Beteiligung der Öffentlichkeit gemäß § 3 Abs. 2 BauGB (öffentliche Auslegung)<br>"
+            },
+            {
+              "normal": "<b>Kontakt:</b><br>Annette Schwarze-Engel<br>Zentrale Koordinierungsstelle Bürgerbeteiligung<br>Am Anger 26<br>07743 Jena<br>Weitere Informationen können Sie über E-Mail oder Telefon erhalter.<br><b>Tel.:</b> 03641 49-5134<br><b>E-Mail:</b> buergerbeteiligung@jena.de",
+              "simple": "<b>Kontakt:</b><br>Annette Schwarze-Engel<br>Zentrale Koordinierungsstelle Bürgerbeteiligung<br>Am Anger 26<br>07743 Jena<br>Weitere Informationen können Sie über E-Mail oder Telefon erhalter.<br><b>Telefonnummer:</b> 03641 49-5134<br><b>E-Mail Adresse:</b> buergerbeteiligung@jena.de"
+            },
+            {
+              "normal": "Einen Hinweis für den Plan können Sie <a href='https://vorhaben.jena.de/de/hinweise_vorhaben/699315?_id=897618' target='_blank' class='text-decoration-underline link-hover'>hier</a> einreichen.",
+              "simple": "Einen Hinweis für den Plan können Sie <a href='https://vorhaben.jena.de/de/hinweise_vorhaben/699315?_id=897618' target='_blank' class='text-decoration-underline link-hover'>hier</a> einreichen."
+            }
+          ],
+          "contentRight": [
+          ],
+          "files": [
+          ]
+        }
+      ],
+      "relatedProjects":
+      {}
+    },
+
+    {
+      "id": 6,
+      "projectName": "Radschnellwege",
+      "projectDescription": "Für den Radschnellweg in Lübeck wurde eine Onlinebefragung durchgeführt. Hier wurden mögliche Trassenverläufe ermittelt und anschließend in einer Informationsveranstaltung wurden diese Verläufe vorgestellt. Hier konnten Bürgerinnen und Bürger ihre Meinung mitteilen und abstimmen, welche der Trassen für Sie am interessantesten sind.",
+      "projectSearchImage": "Luebeck/Korridor_Nord_Onlinebeteiligung.png",
+      "projectSearchImageAltText": "Potentielle Radschnellwege im Nord-Korridor von Lübeck",
+      "active": "Beendete Beteiligung",
+      "endDate": "13.11.2019",
+      "onlineAddress": "https://www.luebeck.de/de/stadtentwicklung/uebermorgen/radschnellwege/index.html",
+      "themes": [
+        {
+          "id": 6
+        },
+        {
+          "id": 7
+        }
+      ],
+      "information": [
+        {
+          "name": "Allgemeine Informationen Radschnellwege",
+          "contentLeft": [
+            {
+              "normal": "Radschnellwege sind Radverkehrsverbindungen, die über größere Entfernungen Wohn- und Gewerbegebiete bzw. Stadtzentren miteinander verknüpfen. Sie garantieren durch hohe bauliche Standards ein sicheres und attraktives Befahren. Ihr besonderes Merkmal ist die Möglichkeit einer gleichbleibenden Fahrgeschwindigkeit mit relativ geringem Energiebedarf, was durch Kreuzungsfreiheit, Geradlinigkeit bzw. große Kurvenradien, gute Oberflächenbeschaffenheit und größere Radwegbreiten erreicht wird. Insbesondere für Pendlerinnen und Pendler sollen Radschnellwege eine sicheres, attraktives und komfortables Vorankommen ermöglichen.",
+              "simple": "Radschnellwege sind Radverkehrsverbindungen, die über größere Entfernungen Wohn- und Gewerbegebiete bzw. Stadtzentren miteinander verknüpfen. Sie garantieren durch hohe bauliche Standards ein sicheres und attraktives Befahren. Ihr besonderes Merkmal ist die Möglichkeit einer gleichbleibenden Fahrgeschwindigkeit mit relativ geringem Energiebedarf, was durch Kreuzungsfreiheit, Geradlinigkeit bzw. große Kurvenradien, gute Oberflächenbeschaffenheit und größere Radwegbreiten erreicht wird. Insbesondere für Pendlerinnen und Pendler sollen Radschnellwege eine sicheres, attraktives und komfortables Vorankommen ermöglichen."
+            }
+          ],
+          "contentRight": [
+            {
+              "src": "Luebeck/Radschnellnetz_MRH_Potenzial.jpg",
+              "alt": "Potentielle Radschnellwege um Lübeck und Hamburg",
+              "normal": "Bild: Potentielle Radschnellwege um Lübeck und Hamburg",
+              "simple": "Bild: Mögliche Radschnellwege um Lübeck und Hamburg"
+            }
+          ],
+          "files": [
+          ]
+        },
+        {
+          "name": "Informationen zur Bürgerbeteiligung",
+          "contentLeft": [
+            {
+              "normal": "Status der Beteiligung: Beendet<br>Beteiligung beendet seit: 13.11.2019",
+              "simple": "Status der Beteiligung: Beendet<br>Beteiligung beendet seit: 13.11.2019"
+            },
+            {
+              "normal": "Bis zu dem 31.07.2018 war eine Onlinebeteiligung möglich. In dieser konnten Vorschläge für den Verlauf des Radschnellwegs von Bad Schwartau über Lübeck bis Groß Grönau eingebracht werden. Dieser Radweg wurde in einen Nördlichen und einen Südlichen Korridor aufgeteilt.",
+              "simple": "Bis zu dem 31.07.2018 war eine Onlinebeteiligung möglich. In dieser konnten Vorschläge für den Verlauf des Radschnellwegs von Bad Schwartau über Lübeck bis Groß Grönau eingebracht werden. Dieser Radweg wurde in einen Nördlichen und einen Südlichen Korridor aufgeteilt."
+            },
+            {
+              "normal": "<b>Ergebnisse des nördlichen Korridors</b><br>Aus der Onlinebeteiligung haben sich vor allem die Schwartauer Alle/Landstraße, Katharinenstraße und Posener Straße als Schwerpunkte für einen Radschnellweg aufgetan. Die Anbindung an den Hauptbahnhof wird vor allem über den Stadtgraben oder die Wallhalbinsel gesehen.",
+              "simple": "<b>Ergebnisse des nördlichen Korridors</b><br>Aus der Onlinebeteiligung haben sich vor allem die Schwartauer Alle/Landstraße, Katharinenstraße und Posener Straße als Schwerpunkte für einen Radschnellweg aufgetan. Die Anbindung an den Hauptbahnhof wird vor allem über den Stadtgraben oder die Wallhalbinsel gesehen."
+            },
+            {
+              "normal": "<b>Ergebnisse des südlichen Korridors</b><br>Aus der Onlinebeteiligung haben sich vor allem die Ratzeburger Allee, der Mühlentorteller und vom Berliner Platz auf die B207 als Schwerpunkte für einen Radschnellweg aufgetan. Die Anbindung an den Hauptbahnhof wird vor allem über der Wallanlagen oder entlang der Mühlenstraße geschehen.",
+              "simple": "<b>Ergebnisse des südlichen Korridors</b><br>Aus der Onlinebeteiligung haben sich vor allem die Ratzeburger Allee, der Mühlentorteller und vom Berliner Platz auf die B207 als Schwerpunkte für einen Radschnellweg aufgetan. Die Anbindung an den Hauptbahnhof wird vor allem über der Wallanlagen oder entlang der Mühlenstraße geschehen."
+            },
+            {
+              "normal": "Am 13.11.2019 fand eine Informationsveranstaltung statt. In dieser konnte zwischen Mehreren mögliche Verbindungen die bevorzugte gewählt werden. Zur Auswahl standen drei Trassen im Nord-Korridor und vier Trassen im Süd-Korridor.",
+              "simple": "Am 13.11.2019 fand eine Informationsveranstaltung statt. In dieser konnte zwischen Mehreren mögliche Verbindungen die bevorzugte gewählt werden. Zur Auswahl standen drei Trassen im Nord-Korridor und vier Trassen im Süd-Korridor."
+            },
+            {
+              "normal": "Für die Trassen des Nord-Korridors wird die Trasse N-2 zu 95% bevorzugt.<br> Für die Trassen des Süd-Korridors wur die Trasse S-1 mit 62% bevorzugt.",
+              "simple": "Für die Trassen des Nord-Korridors wird die Trasse N-2 zu 95% bevorzugt.<br> Für die Trassen des Süd-Korridors wur die Trasse S-1 mit 62% bevorzugt."
+            }
+          ],
+          "contentRight": [
+            {
+              "src": "Luebeck/rsw_nord.png",
+              "alt": "Karte mit den Nord-Trasse Verbindungen",
+              "normal": "Bild: Trassen des nördlichen Korridors",
+              "simple": "Bild: Verbindungen des nördlichen Korridors"
+            },
+            {
+              "src": "Luebeck/rsw_sued.png",
+              "alt": "Karte mit den Süd-Trasse Verbindungen",
+              "normal": "Bild: Trassen des südlichen Korridors",
+              "simple": "Bild: Verbindungen des südlichen Korridors"
+            }
+          ],
+          "files": [
+            {
+              "name": "Karte mit den Ergebnissen zu der Onlinebeteiligung des nördlichen Korridors",
+              "location": "Luebeck/Korridor_Nord_Onlinebeteiligung.png"
+            },
+            {
+              "name": "Karte mit den Ergebnissen zu der Onlinebeteiligung des südlichen Korridors",
+              "location": "Luebeck/Korridor_Süd_Onlinebeteiligung.png"
+            }
+          ]
+        }
+      ],
+      "relatedProjects":
+      {}
+    }
+  ]
+}

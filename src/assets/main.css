@@ -1,0 +1,429 @@
+@import "base.css";
+@import "bootstrap";
+
+/* Colors */
+nav, .download:hover, .vue-dropdown-menu li a:hover, .vue-dropdown-menu-settings li a:hover, .project-hover:hover {
+  background-color: #D3D3D3;
+}
+
+#bottom-nav a:hover, #top-nav svg:hover, .dropdown-toggle:hover, .cancel:hover, li .btn:hover {
+  background-color: #F1F1F1;
+}
+
+.project-background, .vue-dropdown-menu, .vue-dropdown-menu-settings {
+  background-color: #FFFFFF;
+}
+
+.modal-content {
+  background-color: #F1F1F1;
+}
+
+body {
+  background-color: #87CEFA55;
+}
+
+.marked {
+  background-color: #FFFF00;
+}
+
+.link-hover:hover {
+  color: #808080;
+}
+
+.settings {
+  background-color: rgba(0,0,0,0.7); /* gray out everything besides the settings menu */
+}
+
+/* Button designs */
+.btn-outline-dropdown {
+  background-color: #FFFFFF;
+  --bs-btn-border-color: #808080;
+  --bs-btn-hover-border-color: #808080;
+  --bs-gradient: none;
+}
+
+.accept, .dropdown-item.active {
+  background-color: #90EE90;
+  color: #000000;
+  --bs-btn-border-color: #808080;
+  --bs-gradient: none;
+}
+.dropdown-item.active:hover, #leichte-sprache .green:hover {
+  background: #55CC55;
+}
+
+.accept:hover, .cancel {
+  background-color: #D3D3D3;
+  --bs-btn-hover-border-color: #6C757D;
+  --bs-btn-border-color: #808080;
+  --bs-gradient: none;
+}
+
+a, .accept:hover, .cancel {
+  color: #000000;
+}
+
+.green {
+  background: #90EE90;
+}
+
+#top-nav {
+  border-top: #F1F1F1 1px solid;
+}
+
+/* fonts */
+@font-face {
+  font-family: Open Dyslexic;
+  src: url("fonts/OpenDyslexic-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Open Dyslexic Bold;
+  src: url("fonts/OpenDyslexic-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: Monaco;
+  src: url("fonts/Monaco.ttf") format("opentype");
+}
+@font-face {
+  font-family: Helvetica;
+  src: url("fonts/HelveticaNeue-Light.otf") format("opentype");
+}
+
+/* Settings of leichte Sprache toggle */
+.toggle, a {
+  cursor: pointer;
+}
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+/* standard fond and size settings */
+body { font-family: Arial, serif; }
+
+/* Margins and Padding both Interfaces */
+.small-margin-left {
+  margin-left: 2.5vw;
+}
+
+.top-nav-bar-margin-start {
+  margin-bottom: 80px;
+}
+
+.top-nav-bar-margin {
+  margin-bottom: 155px;
+}
+
+.padding-left {
+  padding-left: 8vw;
+}
+
+td {
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.modal-content {
+  padding: 3vh 3vw 3vh 3vw;
+  margin: 15vh auto;
+}
+
+h1 {
+  width: fit-content;
+}
+
+
+/* Nav bars */
+nav {
+  position: fixed;
+  display: inline-block;
+  width: 100vw;
+}
+
+#top-nav {
+  top: 56px;
+  position: fixed;
+}
+
+#bottom-nav {
+  bottom: 0;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.vue-dropdown-menu, .vue-dropdown-menu-settings {
+  position: absolute;
+  z-index: var(--bs-dropdown-zindex);
+  margin: 7px 0 0;
+  text-align: left;
+  list-style: none;
+  border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+  border-radius: var(--bs-dropdown-border-radius);
+}
+.vue-dropdown-menu li, .vue-dropdown-menu-settings li {
+  margin: 3px;
+}
+
+.medium-width {
+  min-width: 30vw;
+}
+
+.display-right, .display-simple-right {
+  text-align: right;
+}
+
+img {
+  object-fit: cover;
+}
+
+.settings-img {
+  object-fit: contain;
+  height: 4vh;
+  width: 5vw;
+}
+
+.s-img {
+  object-fit: contain;
+  height: 3vh;
+  width: 3vw;
+}
+
+.project-image {
+  min-height: 10vh;
+  max-height: 15vh;
+  width: 100%;
+}
+
+.search-img {
+  height: inherit;
+  object-fit: contain;
+}
+
+.desktop-filter h3 {
+  margin-right: 3vw;
+}
+
+.project-search {
+  width: 85%;
+}
+
+/* Desktop Interface */
+@media only screen and (orientation: landscape) {
+  .title {
+    margin-top: .5vh;
+  }
+
+  .search-btn-size {
+    height: 100%;
+    min-width: 2%;
+    width: fit-content;
+  }
+  
+  /* Settings Grid Layout */
+  .nav .col-5, #settings-menu .col-5, #project-nav .col-5 {
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+  .nav .col-1, #settings-menu .col-1 {
+    width: 25%;
+  }
+
+  #project-nav .col-1 {
+    width: 40%;
+  }
+
+  .button-size, .vue-dropdown-menu {
+    width: 16vw;
+    min-width: 200px;
+  }
+
+  .footer-size {
+    font-size: 22px;
+  }
+
+  .button-size-settings, .vue-dropdown-menu-settings {
+    width: 25vw;
+    min-width: 165px;
+  }
+
+  .container {
+    width: 85vw;
+    max-width: 85vw;
+  }
+
+  .my-col {
+    flex: 1 0 0%;
+  }
+
+  .display-right {
+    right: 0;
+  }
+
+  .display-simple-right {
+    width: 36vw;
+  }
+
+  /* change between desktop and mobile layout */
+  .desktop-filter {
+    display: inline;
+  }
+  .mobil-filter {
+    display: none;
+  }
+
+  .download {
+    width: 50%;
+  }
+
+  .in-project-width {
+    width: 80%;
+  }
+}
+
+.fixed-top {
+  z-index: 4;
+  height: 56px;
+}
+
+.pages {
+  font-size: 10px;
+}
+
+.link-hover {
+  text-decoration: underline;
+}
+
+/* Mobile Interface */
+@media only screen and (orientation: portrait) {
+  button {
+    min-width: 10vw;
+  }
+
+  .top-nav-bar-margin-start {
+    margin-bottom: 125px;
+  }
+
+  .search-btn-size {
+    height: 90%;
+    min-width: 2%;
+    width: fit-content;
+  }
+
+  /* Settings Grid Layout */
+  .nav .col-5, #settings-menu .col-5 {
+    width: 100%;
+  }
+  .nav .col-1, #settings-menu .col-1 {
+    width: 50%;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-size {
+    font-size: 16px;
+  }
+
+  #project-nav .col-5 {
+    width: 50%;
+    margin-bottom: 0.5rem;
+  }
+  #project-nav .col-1 {
+    margin-bottom: 0.5rem;
+    width: 40%;
+  }
+
+  .my-col {
+    width: 100%;
+  }
+
+  .button-size, .vue-dropdown-menu {
+    width: 30vw;
+    min-width: 145px;
+  }
+
+  .button-size-settings, .vue-dropdown-menu-settings {
+    width: 40vw;
+    min-width: 165px;
+  }
+
+  .container {
+    width: 90vw;
+    max-width: 90vw;
+  }
+
+  .p-5 {
+    padding: 5vw!important; /* !important to overwrite !important from bootstrap */
+  }
+
+  .display-right {
+    right: 0;
+  }
+
+  .display-simple-right {
+    width: 35vw;
+  }
+
+  /* change between desktop and mobile layout */
+  .desktop-filter {
+    display: none;
+  }
+  .mobil-filter {
+    display: inline;
+  }
+
+  .in-project-width {
+    width: 100%;
+  }
+
+  .settings-img {
+    height: 5vh;
+    width: 6vw;
+  }
+  
+  @media screen and (width < 550px) {
+    .title {
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+
+    .top-nav-bar-margin {
+      margin-bottom: 140px;
+    }
+
+    .search-btn-size {
+      height: 75%;
+      min-width: 2%;
+      width: fit-content;
+    }
+
+    .settings-img {
+      height: 5vh;
+      width: 7vw;
+    }
+
+    #leichte-sprache div, .small {
+      font-size: 10px;
+    }
+  }
+}
+
+/* The Settings menu */
+.settings {
+  position: fixed;
+  z-index: 10; /* Sits over entire body */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-content {
+  width: 60vw;
+  min-width: 300px;
+}
+
+.accept, .cancel {
+  font-weight: bold;
+}
