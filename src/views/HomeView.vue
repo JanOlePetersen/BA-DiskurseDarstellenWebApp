@@ -12,7 +12,7 @@ import '../assets/main.css';
             <form class="shadow project-search d-inline-block" role="search" v-on:keydown.enter.prevent>
               <input v-on:keyup="getDataForFilter()" v-on:mouseup="getDataForFilter()" v-model="search" type="search" class="form-control" id="search-project" placeholder="Suche nach Projekt..." aria-label="Search" v-bind:style="{ fontSize: fontSize + 4 + 'px' }">
             </form>
-            <div class="btn btn-outline-dropdown align-items-center text-decoration-none shadow p-0 h-100 m-0 mb-1">
+            <div class="btn btn-outline-dropdown align-items-center text-decoration-none shadow p-0 h-100 m-0 mb-1 search-btn-size">
               <img src="../../files/magnifying-glass-solid.svg" alt="suche" class="search-img p-1">
             </div>
           </div>
