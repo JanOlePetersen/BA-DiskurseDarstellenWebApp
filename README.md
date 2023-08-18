@@ -1,13 +1,18 @@
-# Bachelor_Arbeit_Programm_Petersen
+# Bachelor Arbeit Webanwendung Petersen
+
+Für die Installation wird npm Version 8.5.1 und node Version >=16.20.0 benötigt.
+
+Für Befehle auf Linux wird sudo benötigt.
 
 # Projekt Setup
 
-## Install vue
+## Installiere vue
 ```
-npm init vue@latest
+$ npm init vue@3.3.4
 ```
-choose Project name
+Wähle Projektnamen
 
+### Vue Einstellungen
 ```
 add TypeScript NO
 add JSX Support NO
@@ -20,38 +25,38 @@ add prettier NO
 ```
 
 ```
-cd Project name
+$ cd Project name
 ```
 
 ### install bootstrap
 ```
-npm install bootstrap
+$ npm install bootstrap
 ```
 ### install font awesome
 ```
-npm i --save @fortawesome/fontawesome-svg-core@1.x
-npm i --save @fortawesome/free-solid-svg-icons@5.x
-npm i --save @fortawesome/free-regular-svg-icons@5.x
-npm i --save @fortawesome/free-brands-svg-icons@5.x
-npm i --save @fortawesome/vue-fontawesome@latest-3
+$ npm i --save @fortawesome/fontawesome-svg-core@1.x
+$ npm i --save @fortawesome/free-solid-svg-icons@5.x
+$ npm i --save @fortawesome/free-regular-svg-icons@5.x
+$ npm i --save @fortawesome/free-brands-svg-icons@5.x
+$ npm i --save @fortawesome/vue-fontawesome@latest-3
 ```
 
 ```
-npm fund
-npm install
+$ npm fund
+$ npm install
 ```
 
-delete public and src folder
+lösche public und src Ordner
 
-replace index.html
+ersetze index.html
 
-copy src, data, dist and files folder to project
+kopiere src, data und files Ordner in das Projektverzeichnis
 
-## Start Project locally
+## Starte Projekt lokal
 ```
-npm run dev
+$ npm run dev
 ```
-## Create files for server
+## Erstelle Dateien für die Serververwendung
 ```
-npm run build
+$ npm run build
 ```
