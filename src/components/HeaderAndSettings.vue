@@ -43,11 +43,11 @@
           <div class="col-5">
             <button @click="dropdownFontFamily = !dropdownFontFamily" class="btn btn-outline-dropdown align-items-center mb-2 mb-lg-0 text-decoration-none dropdown-toggle button-size-settings shadow" data-bs-toggle="dropdown" aria-expanded="false" id="filter-font" v-bind:style="{ fontSize: fontSize + 6 + 'px' }">Arial</button>
             <ul v-show="dropdownFontFamily" @:mouseleave="dropdownFontFamily = false" class="vue-dropdown-menu-settings list-style-none text-small gap-1 p-2 rounded-3 mx-0 shadow w-220px" id="font-options" v-bind:style="{ fontSize: fontSize + 4 + 'px' }">
-              <li><a class="dropdown-item rounded-2" @click="dropdownFontFamily = !dropdownFontFamily" @:click="filterFont('times')" id="times">Times New Roman</a></li>
-              <li><a class="dropdown-item rounded-2" @click="dropdownFontFamily = !dropdownFontFamily" @:click="filterFont('open-dyslexic')" id="open-dyslexic">Open Dyslexic</a></li>
-              <li><a class="dropdown-item rounded-2" @click="dropdownFontFamily = !dropdownFontFamily" @:click="filterFont('hel')" id="hel">Helvetica</a></li>
-              <li><a class="dropdown-item rounded-2" @click="dropdownFontFamily = !dropdownFontFamily" @:click="filterFont('mon')" id="mon">Monaco</a></li>
-              <li><a class="dropdown-item rounded-2 active" @click="dropdownFontFamily = !dropdownFontFamily" @:click="filterFont('arial')" id="arial">Arial</a></li>
+              <li><a class="dropdown-item rounded-2" @click="dropdownFontFamily = !dropdownFontFamily" @:click="filterFont('times')" style="font-family: 'Times New Roman'" id="times">Times New Roman</a></li>
+              <li><a class="dropdown-item rounded-2" @click="dropdownFontFamily = !dropdownFontFamily" @:click="filterFont('open-dyslexic')" style="font-family: 'Open Dyslexic'" id="open-dyslexic">Open Dyslexic</a></li>
+              <li><a class="dropdown-item rounded-2" @click="dropdownFontFamily = !dropdownFontFamily" @:click="filterFont('hel')" style="font-family: Helvetica" id="hel">Helvetica</a></li>
+              <li><a class="dropdown-item rounded-2" @click="dropdownFontFamily = !dropdownFontFamily" @:click="filterFont('mon')" style="font-family: Monaco" id="mon">Monaco</a></li>
+              <li><a class="dropdown-item rounded-2 active" @click="dropdownFontFamily = !dropdownFontFamily" @:click="filterFont('arial')" style="font-family: Arial" id="arial">Arial</a></li>
             </ul>
           </div>
         </div>
